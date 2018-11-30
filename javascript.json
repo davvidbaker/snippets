@@ -1,0 +1,104 @@
+{
+  /*
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+  "info": {
+    "prefix": "info",
+    "body": "/* 💁 $1 */"
+  },
+  "warn": {
+    "prefix": "warn",
+    "body": "/* ⚠️ $1 */"
+  },
+  "flow": {
+    "prefix": "flow",
+    "body": "// @flow"
+  },
+  "hmm": {
+    "prefix": "hmm",
+    "body": "/* 🤔 $1 */"
+  },
+  "Print to console": {
+    "prefix": "log",
+    "body": ["console.log(`🔥 $2 $1`, $1);"],
+    "description": "Log output to console"
+  },
+  "logor": {
+    "prefix": "logor",
+    "body": ["console.log(`🔥 $2 $1`, $1) || "],
+    "description": "Log output to console"
+  },
+  "styled-components": {
+    "prefix": "styled",
+    "body": "import styled from 'styled-components';",
+    "description": "styled-components"
+  },
+  "prop-types": {
+    "prefix": "proptypes",
+    "body": "import PropTypes from 'prop-types';",
+    "description": "prop-types"
+  },
+  "reactc": {
+    "prefix": "reactc",
+    "body": "import React, { Component } from 'react';",
+    "description": "react"
+  },
+  "react": {
+    "prefix": "react",
+    "body": "import * as React from 'react';",
+    "description": "react"
+  },
+  "future": {
+    "prefix": "future",
+    "body": "/* 🔮 $1 */",
+    "description": "future"
+  },
+  "eslint-disable-next-line": {
+    "prefix": "ednl",
+    "body": "// eslint-disable-next-line $1"
+  },
+  "eslint-disable": {
+    "prefix": "ed",
+    "body": ["/* eslint-disable $1 */", "/* eslint-enable $1 */"]
+  },
+  "react/prop-types": {
+    "prefix": "rpt",
+    "body": "react/prop-types"
+  },
+  "export-default": {
+    "prefix": "exd",
+    "body": "export default $1",
+    "description": "export default"
+  },
+  "story": {
+    "prefix": "story",
+    "body": [
+      "// @flow",
+      "import * as React from 'react';",
+      "import { storiesOf, action } from '@storybook/react';",
+      "",
+      "import $1 from './$2';",
+      "import scramble4Wrapper from '..$3/scramble4-connect-test-wrapper';",
+      "import {  } from '../../fixtures/$4';",
+      "",
+      "const Scramble$1 = scramble4Wrapper({ translations })($1);",
+      "",
+      "storiesOf('$1', module)",
+      "  .add('default', () => (",
+      "    <Scramble$1 />",
+      "  ))"
+    ]
+  }
+}
