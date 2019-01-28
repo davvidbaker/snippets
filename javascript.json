@@ -87,7 +87,8 @@
     "body": [
       "// @flow",
       "import * as React from 'react';",
-      "import { storiesOf, action } from '@storybook/react';",
+      "import { storiesOf } from '@storybook/react';",
+      "import { action } from '@storybook/addon-actions';",
       "",
       "import $1 from './$2';",
       "import scramble4Wrapper from '..$3/scramble4-connect-test-wrapper';",
